@@ -1,5 +1,5 @@
 
-import { useAddress, useMetamask, useEditionDrop, useToken, useVote, useNetwork,  ChainId } from '@thirdweb-dev/react';
+import { useAddress, useMetamask, useEditionDrop, useToken, useVote, useNetwork } from '@thirdweb-dev/react';
 import { useState, useEffect, useMemo } from 'react';
 import { AddressZero } from "@ethersproject/constants"; 
 
@@ -175,7 +175,7 @@ useEffect(() => {
       setIsClaiming(false);
     }
   };
-  if (network?.[0].data.chain.id !== ChainId.Rinkeby) {
+  if (network?.[0].data.chainid !== ChainId.Rinkeby) {
     return (
       <div className="unsupported-network">
         <h2>Please connect to Rinkeby</h2>

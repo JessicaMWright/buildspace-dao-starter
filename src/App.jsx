@@ -2,6 +2,7 @@
 import { useAddress, useMetamask, useEditionDrop, useToken, useVote, useNetwork } from '@thirdweb-dev/react';
 import { useState, useEffect, useMemo } from 'react';
 import { AddressZero } from "@ethersproject/constants"; 
+import { ChainId } from '@thirdweb-dev/sdk'
 
 const App = () => {
   // Use the hooks thirdweb give us.
